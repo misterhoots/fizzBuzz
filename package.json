@@ -2,7 +2,7 @@
     "name" : "newproject",
     "version" : "0.0.1",
     "description" : "This is a blank canvas for new website development",
-    "license" : "SEE LICENSE IN license.txt",
+    "license" : "SEE LICENSE IN LICENSE,
     "private": true,
     "dependencies" : {
         "grunt" : "~0.4.5",
