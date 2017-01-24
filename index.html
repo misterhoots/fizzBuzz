@@ -2,16 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New Project</title>
-    <link rel="stylesheet" href="_/css/styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>fizzbuzz</title>
+    <link rel="stylesheet" href="_/css/style.css">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Iure praesentium ratione veritatis assumenda aperiam dolor
-        aut corrupti impedit ab expedita omnis mollitia enim alias
-        atque consectetur velit similique vel debitis.</p>
+    <audio id="background_audio" autoplay="autoplay" loop>
+        <source src="_/resources/jeopardy.mp3" />
+    </audio>
+
+    <!-- Navigation Bar -->
+    <!-- <nav data-spy="affix" data-offset-top="195">
+        <div class="wrap">
+            <div class="logo">
+                <h3>Logo</h3>
+            </div>
+            <div class="nav-menu">
+                <a href="#"></a>
+            </div>
+            <ul class="nav-menu-ist">
+                <li class="nav"><a href="#">Home</a></li>
+                <li class="nav"><a href="#">About</a></li>
+                <li class="nav"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav> -->
+    <!-- END Navigation Bar -->
+
+    <!-- Header Section -->
+    <header>
+        <div class="wrap">
+            <div class="options">
+                <label for="">Count to how much?</label>
+                <input type="number" id="count" value='15' />
+                <a href="#noscroll" class="btn">run!</a>
+            </div>
+            <div class="play">
+                <a href="#noscroll" id="mute">toggle sound</a>
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+    </header>
+    <!-- END Header Section -->
+
+    <!-- Main Section -->
+    <main>
+    </main>
+    <!-- END Main Section -->
+
+    <!-- Footer Section -->
+    <footer>
+    </footer>
+    <!-- END Footer Section -->
     <script src="_/js/script.js"></script>
-    <script src="http://localhost:35729/livereload.js"></script>
+    <script>
+    var audio = document.getElementById('background_audio');
+
+    document.getElementById('mute').addEventListener('click', function (e)
+    {
+        e = e || window.event;
+        audio.muted = !audio.muted;
+        e.preventDefault();
+    }, false);
+    </script>
+
 </body>
 </html>

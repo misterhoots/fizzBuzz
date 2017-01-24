@@ -1,7 +1,7 @@
-# Misterhoots Skeleton project
----
+# Fizz Buzz project
 
-### This is a blank canvas for new website development
+Trying to make a common programming question more fun
+---
 
 The tools used in this project are as follows
 

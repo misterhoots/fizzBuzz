@@ -1,0 +1,114 @@
+@import "mixins";
+
+// Susy Setup-----------------------------------------
+
+$susy: (
+  container: 1024px,
+  columns: 12,
+  gutters: 1/4,
+  gutter-position: right,
+  //debug: (image: show),
+  global-box-sizing: border-box,
+);
+
+* {
+   @include border-box-sizing
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrap {
+   @include container;
+   margin-top:20px;
+}
+
+// Header --------------------------------------------
+
+header {
+    @include background-cover();
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+ul {
+   padding:40px 0 0 0;
+}
+
+li {
+   display:block;
+   @include gallery(3);
+   padding:20px;
+   margin:10px;
+   background-color:paleturquoise;
+   height:120px;
+   @include box-shadow(lightgrey 2px 2px 2px);
+   vertical-align: middle;
+   list-style:none;
+   text-align:center;
+   color: darkslateblue;
+   text-transform:uppercase;
+   font-size:2em;
+   font-weight:700;
+   font-family:'Ubuntu', sans-serif;
+
+   p {
+      position: relative;
+      top: 0;
+      transform: translateY(-50%);
+   }
+}
+
+.fizz{
+   background-color:$bg-color-fizz;
+   color:$color-fizz;
+}
+
+.buzz{
+   background-color:$bg-color-buzz;
+   color:$color-buzz;
+}
+
+.fizzbuzz{
+   background-color:$bg-color-fizzbuzz;
+   color:$color-fizzbuzz;
+}
+
+.options{
+   @include span(6);
+   text-align:left;
+}
+.play{
+   @include span(2 last);
+   text-align:right;
+}
+
+.btn {
+    background-color: gold;
+    padding: 4px;
+    color: #333;
+   @include box-shadow(lightgrey 1px 1px 2px);
+}
+
+input {
+    line-height: normal;
+    border: none;
+    padding: 4px;
+    background-color: lightsalmon;
+   @include box-shadow(lightgrey 1px 1px 2px);
+
+}
+
+a{
+   text-decoration:none;
+}
+// Footer --------------------------------------------
+
+footer {
+
+}
